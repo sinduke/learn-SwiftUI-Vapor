@@ -27,7 +27,7 @@ struct ContentView: View {
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)
         }
-        .padding(/*@START_MENU_TOKEN@*/.all, 20.0/*@END_MENU_TOKEN@*/)
+        .padding(.all, 20)
         .frame(height: 350.0)
         .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Background")/*@END_MENU_TOKEN@*/)
         .cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)

@@ -19,6 +19,7 @@ struct ContentView: View {
             Text("SwiftUI for iOS 15")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
             Text("20 sections - 3 hours".uppercased())
                 .font(.footnote)
                 .fontWeight(.semibold)
@@ -33,10 +34,21 @@ struct ContentView: View {
         .padding(.all, 20)
         .padding(.vertical, 20)
         .frame(height: 350.0)
-        .background(Color("Background"))
+        .background(.ultraThinMaterial)
         .cornerRadius(30.0)
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         .padding(.horizontal, 20)
+        .background(
+            Image("Blob 1")
+                .offset(x: 250, y: -100)
+        )
+        .overlay(
+            Image("Illustration 5")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 230)
+                .offset(x: 32, y: -80)
+        )
     }
 }
 
